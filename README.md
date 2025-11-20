@@ -86,11 +86,6 @@ nevra_presentacion/
 - **Lucide React** - Íconos modernos
 - **React SWC** - Compilador optimizado
 
-## 🎨 Diseño
-
-El diseño original está disponible en Figma:
-[Ver diseño en Figma](https://www.figma.com/design/6ObcsDy1SJcuHh8lcJmNb4/Crear-Presentaciones-de-Slides)
-
 ## 📦 Build para Producción
 
 ```bash
