@@ -6,7 +6,7 @@ export function Slide06DiferencialNevra() {
     {
       icon: Brain,
       titulo: 'IA como Agente Autónomo',
-      descripcion: 'No es un asistente. Es un analista 24/7 que valida, rechaza y aprende sin intervención humana.',
+      descripcion: 'No es un asistente. Es un analista 24/7 que valida, rechaza y aprende con validación humana.',
       color: '#3B82F6',
       gradient: 'from-blue-500 to-blue-600'
     },

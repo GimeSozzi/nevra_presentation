@@ -20,7 +20,7 @@ export function Slide09ExperienciaMobile() {
     },
     {
       icon: Shield,
-      text: 'Seguridad bancaria end-to-end',
+      text: 'Seguridad end-to-end',
       color: '#10B981'
     }
   ];
@@ -96,12 +96,12 @@ export function Slide09ExperienciaMobile() {
 
           {/* Stat box */}
           <div className="mt-12 bg-gradient-to-r from-[#3B82F6] to-[#06B6D4] rounded-2xl p-8 shadow-xl">
-            <div className="flex items-center gap-4 mb-3">
-              <Clock className="w-8 h-8 text-white" />
-              <p className="text-white text-3xl">Tiempo promedio</p>
+            <div className="flex items-center gap-4 justify-center">
+              <Clock className="w-10 h-10 text-white" />
+              <p className="text-white text-3xl text-center">
+                Desde inicio hasta aprobación en sólo <span className="font-bold">minutos</span>
+              </p>
             </div>
-            <p className="text-white text-5xl">8-12 minutos</p>
-            <p className="text-white/80 text-xl mt-2">desde inicio hasta aprobación</p>
           </div>
         </div>
       </div>

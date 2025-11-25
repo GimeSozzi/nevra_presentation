@@ -112,7 +112,7 @@ export function Slide19ConceptoBlockchain() {
                   <div className="flex items-start gap-4">
                     <CheckCircle2 className="w-8 h-8 text-[#10B981] flex-shrink-0 mt-1 drop-shadow-md" strokeWidth={2.5} />
                     <p className="text-[#02023F] text-xl leading-relaxed">
-                      <span className="font-semibold">Cadena de custodia perfecta</span> - Auditable por BCRA, UIF y externos
+                      <span className="font-semibold">Cadena de custodia perfecta</span> - Auditable por reguladores / revisores y auditores externos
                     </p>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ export function Slide19ConceptoBlockchain() {
         <div className="text-center mt-16 relative z-10">
           <div className="inline-block bg-gradient-to-r from-[#A855F7] to-[#EC4899] rounded-2xl px-12 py-6 shadow-2xl">
             <p className="text-white text-3xl">
-              Prueba forense <span className="font-bold">irrefutable</span> ante BCRA, UIF y auditorías externas
+              Prueba forense <span className="font-bold">irrefutable</span> ante reguladores/revisores y auditorías externas
             </p>
           </div>
         </div>

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Slide01Portada } from './components/Slide01Portada';
-import { Slide02CrisisSilenciosa } from './components/Slide02CrisisSilenciosa';
 import { Slide02Problema } from './components/Slide02Problema';
 import { Slide04PreguntaCritica } from './components/Slide04PreguntaCritica';
 import { Slide05Nevra3Pilares } from './components/Slide05Nevra3Pilares';
@@ -35,7 +34,6 @@ import { Slide30MuchasGracias } from './components/Slide30MuchasGracias';
 const slides = [
   // ACTO 1: EL PROBLEMA (3 slides)
   Slide01Portada,              // 1. Portada
-  Slide02CrisisSilenciosa,     // 2. Crisis Silenciosa
   Slide02Problema,             // 3. Problemas Operativos
   
   // ACTO 2: LA SOLUCIÓN - NEVRA (5 slides)
@@ -70,8 +68,8 @@ const slides = [
   
   // ACTO 5: CIERRE (5 slides)
   Slide19DiferenciadoresUnicos,// 28. Lo Único de Nevra
-  Slide29Preguntas,            // 29. Preguntas
-  Slide16CTA,                  // 30. CTA Final
+  Slide16CTA,                  // 29. CTA Final - El futuro es Nevra
+  Slide29Preguntas,            // 30. Preguntas
   Slide30MuchasGracias,        // 31. Muchas Gracias
 ];
 

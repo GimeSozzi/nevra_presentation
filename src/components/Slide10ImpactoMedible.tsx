@@ -1,25 +1,25 @@
-import { TrendingUp, Users, DollarSign } from 'lucide-react';
+import { TrendingUp, Users, DollarSign, ArrowUp, ArrowDown } from 'lucide-react';
 import logoBlue from 'figma:asset/2ea72b0dcf0eee577b3030f20b3826bf2c827779.png';
 
 export function Slide10ImpactoMedible() {
   const metricas = [
     {
       icon: Users,
-      numero: '95%',
+      numero: <ArrowUp className="w-24 h-24 mx-auto stroke-[3]" />,
       descripcion: 'Satisfacción del Cliente',
       color: '#3B82F6',
       gradient: 'from-blue-500 to-blue-600'
     },
     {
       icon: TrendingUp,
-      numero: '87%',
+      numero: <ArrowUp className="w-24 h-24 mx-auto stroke-[3]" />,
       descripcion: 'Conversión Digital',
       color: '#06B6D4',
       gradient: 'from-cyan-500 to-cyan-600'
     },
     {
       icon: DollarSign,
-      numero: '-60%',
+      numero: <ArrowDown className="w-24 h-24 mx-auto stroke-[3]" />,
       descripcion: 'Costos Operativos',
       color: '#10B981',
       gradient: 'from-emerald-500 to-emerald-600'
@@ -80,12 +80,20 @@ export function Slide10ImpactoMedible() {
                   </div>
 
                   {/* Number */}
-                  <h3 
-                    className="text-7xl mb-6"
-                    style={{ color: metrica.color }}
+                  <div 
+                    className="mb-6 relative"
                   >
-                    {metrica.numero}
-                  </h3>
+                    <div className="absolute inset-0 blur-xl opacity-40 animate-pulse"
+                      style={{ color: metrica.color }}
+                    >
+                      {metrica.numero}
+                    </div>
+                    <div className="relative group-hover:scale-110 transition-transform duration-300"
+                      style={{ color: metrica.color }}
+                    >
+                      {metrica.numero}
+                    </div>
+                  </div>
 
                   {/* Description */}
                   <p className="text-[#374151] text-2xl leading-relaxed">
@@ -109,8 +117,7 @@ export function Slide10ImpactoMedible() {
         <div className="text-center relative z-10">
           <div className="inline-block bg-white/80 backdrop-blur-sm rounded-2xl px-12 py-6 border border-[#E5E7EB] shadow-lg max-w-4xl">
             <p className="text-[#374151] text-2xl leading-relaxed">
-              Sus clientes esperan <span className="text-[#3B82F6]">experiencia de fintech</span>.<br />
-              Ahora pueden ofrecerla sin comprometer compliance.
+              El módulo de onboarding reduce costos y son medibles.
             </p>
           </div>
         </div>

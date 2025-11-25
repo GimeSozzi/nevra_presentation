@@ -1,4 +1,4 @@
-import { MessageSquare, Database, TrendingUp } from 'lucide-react';
+import { MessageSquare, Database, Wrench } from 'lucide-react';
 import logoBlue from 'figma:asset/2ea72b0dcf0eee577b3030f20b3826bf2c827779.png';
 
 export function Slide19ConceptoAgenteIA() {
@@ -18,9 +18,9 @@ export function Slide19ConceptoAgenteIA() {
       gradient: 'from-cyan-500 to-cyan-600'
     },
     {
-      icon: TrendingUp,
-      titulo: 'Monitoreo Predictivo',
-      descripcion: 'Anticipa comportamientos anómalos antes de que se conviertan en alertas de riesgo',
+      icon: Wrench,
+      titulo: 'Agente Potenciado con Herramientas',
+      descripcion: 'Conocimiento integral del legajo. Búsqueda de noticias adversas. Acceso a listas públicas (APIs BCRA, ARCA, etc.) y otras herramientas',
       color: '#A855F7',
       gradient: 'from-purple-500 to-purple-600'
     }
@@ -49,7 +49,7 @@ export function Slide19ConceptoAgenteIA() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-[#02023F] text-6xl leading-tight mb-6">
-            Agente IA <span className="text-[#A855F7]">24/7</span>
+            Agente IA <span className="text-[#A855F7] whitespace-nowrap">24/7</span>
           </h2>
           <p className="text-[#6B7280] text-3xl">
             Tu analista virtual que responde, consulta y predice

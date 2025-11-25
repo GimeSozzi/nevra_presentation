@@ -29,7 +29,7 @@ export function Slide05Arquitectura() {
         <div className="text-center mb-20">
           <h2 className="text-[#02023F] text-6xl leading-tight">
             Una arquitectura pensada para el<br />
-            <span className="text-[#3B82F6]">banco</span> y para su <span className="text-[#06B6D4]">cliente</span>
+            <span className="text-[#3B82F6]">sujeto obligado</span> y para su <span className="text-[#06B6D4]">cliente</span>
           </h2>
         </div>
 
@@ -130,7 +130,7 @@ export function Slide05Arquitectura() {
         {/* Footer Note */}
         <div className="text-center mt-16">
           <div className="inline-block bg-white/80 backdrop-blur-sm rounded-2xl px-10 py-5 border border-[#E5E7EB] shadow-lg">
-            <p className="text-[#374151] text-lg">
+            <p className="text-[#374151] text-2xl">
               <span className="text-[#3B82F6]">APIs abiertas</span> para integrarse con core bancario, CRM, sistemas de screening y data externa
             </p>
           </div>

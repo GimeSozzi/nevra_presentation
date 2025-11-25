@@ -1,13 +1,13 @@
-import { Clock, Target, Shield } from 'lucide-react';
+import { Clock, Target, Shield, TrendingDown } from 'lucide-react';
 import logoBlue from 'figma:asset/2ea72b0dcf0eee577b3030f20b3826bf2c827779.png';
 
 export function Slide14ImpactoOperativo() {
   const metricas = [
     {
       icon: Clock,
-      titulo: '-85%',
+      titulo: 'icon',
       descripcion: 'Tiempo de DDC',
-      detalle: 'De 8 horas a 12 minutos',
+      detalle: 'De horas a minutos',
       color: '#3B82F6',
       gradient: 'from-blue-500 to-blue-600'
     },
@@ -21,7 +21,7 @@ export function Slide14ImpactoOperativo() {
     },
     {
       icon: Shield,
-      titulo: '-60%',
+      titulo: 'icon',
       descripcion: 'Falsos Positivos',
       detalle: 'IA aprende continuamente',
       color: '#A855F7',
@@ -85,13 +85,23 @@ export function Slide14ImpactoOperativo() {
                     </div>
                   </div>
 
-                  {/* Number */}
-                  <h3 
-                    className="text-6xl mb-4"
-                    style={{ color: metrica.color }}
-                  >
-                    {metrica.titulo}
-                  </h3>
+                  {/* Number or Icon */}
+                  {metrica.titulo === 'icon' ? (
+                    <div className="mb-4">
+                      <TrendingDown 
+                        className="w-16 h-16"
+                        style={{ color: metrica.color }}
+                        strokeWidth={3}
+                      />
+                    </div>
+                  ) : (
+                    <h3 
+                      className="text-6xl mb-4"
+                      style={{ color: metrica.color }}
+                    >
+                      {metrica.titulo}
+                    </h3>
+                  )}
 
                   {/* Description */}
                   <p className="text-[#02023F] text-2xl mb-3">

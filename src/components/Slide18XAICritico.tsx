@@ -6,7 +6,8 @@ export function Slide18XAICritico() {
     'IA de caja negra',
     'No puedes explicar decisiones',
     'Sin trazabilidad de datos',
-    'Auditorías imposibles'
+    'Auditorías imposibles',
+    'Sin gobernanza de IA ni datos'
   ];
 
   const nevraFeatures = [
@@ -25,6 +26,10 @@ export function Slide18XAICritico() {
     {
       titulo: 'Reportes listos para auditoría',
       detalle: 'Exporta justificaciones en un clic'
+    },
+    {
+      titulo: 'Gobernanza integrada de IA y datos',
+      detalle: 'Control del ciclo de vida, linaje de datos y políticas centralizadas'
     }
   ];
 

@@ -10,21 +10,21 @@ export function Slide16CTA() {
     {
       icon: Mail,
       title: 'Demo personalizada',
-      description: 'Profundizar en casos de uso concretos de su banco (segmentos, riesgos, regulaciones locales).',
+      description: 'Profundizar en casos de uso concretos de su entidad (segmentos, riesgos, regulaciones locales).',
       color: '#3B82F6',
       gradient: 'from-blue-500 to-blue-600'
     },
     {
       icon: Calendar,
       title: 'Piloto acotado',
-      description: 'Implementación inicial en un segmento o unidad de negocio para medir impacto real en 60–90 días.',
+      description: 'Implementación modular al inicio para medir el impacto real.',
       color: '#06B6D4',
       gradient: 'from-cyan-500 to-cyan-600'
     },
     {
       icon: ArrowRight,
       title: 'Roadmap conjunto',
-      description: 'Definir, junto con su equipo, una hoja de ruta escalonada para todo el grupo financiero.',
+      description: 'Definir, junto con su equipo, una hoja de ruta escalonada para implementación en el sujeto obligado.',
       color: '#A855F7',
       gradient: 'from-purple-500 to-purple-600'
     }

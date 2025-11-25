@@ -26,7 +26,7 @@ export function Slide01Portada() {
       <div className="relative h-full flex flex-col justify-between p-20">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={logoWhite} alt="Nevra+" className="h-16" />
+          <img src={logoWhite} alt="Nevra+" className="h-28" />
         </div>
 
         {/* Main Content - Grid con contenido izquierda y animación derecha */}
@@ -38,11 +38,11 @@ export function Slide01Portada() {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <h2 className="text-7xl leading-tight mb-8">
-              <span className="text-white">Prevención inteligente.</span><br />
-              <span className="text-blue-400">Cumplimiento sin fricciones.</span>
+              <span className="text-white">Prevención y Cumplimiento</span><br />
+              <span className="text-blue-400">Inteligente.</span>
             </h2>
-            <p className="text-white/80 text-2xl leading-relaxed max-w-3xl">
-              <span className="font-bold text-white">Nevra</span> es una plataforma que combina <span className="font-bold text-white">Inteligencia Artificial</span> y Humana + <span className="font-bold text-white">Blockchain</span> para la detección y prevención de lavado de activos (LA/FT).
+            <p className="text-white/80 text-3xl leading-relaxed max-w-3xl">
+              <span className="font-bold text-white">Nevra</span> es una plataforma modular que combina <span className="font-bold text-white">Inteligencia Artificial</span> y Humana + <span className="font-bold text-white">Blockchain</span> para la prevención de lavado de activos y fraude (LA/FT).
             </p>
           </motion.div>
 
@@ -112,7 +112,7 @@ export function Slide01Portada() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.5, delay: node.delay + 0.3 }}
-                      className="text-blue-200/90 text-xs"
+                      className="text-blue-200/90 text-lg"
                     >
                       {node.label}
                     </motion.span>

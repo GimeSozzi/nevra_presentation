@@ -106,13 +106,19 @@ export function Slide13ConceptoLegajo() {
                   <div className="flex items-start gap-4">
                     <CheckCircle2 className="w-8 h-8 text-[#10B981] flex-shrink-0 mt-1 drop-shadow-md" strokeWidth={2.5} />
                     <p className="text-[#02023F] text-xl leading-relaxed">
-                      <span className="font-semibold">Historial completo inmutable</span> - Cada cambio queda registrado con timestamp
+                      <span className="font-semibold">Historial completo inmutable</span> - Cada cambio queda registrado con timestamp blockchain
                     </p>
                   </div>
                   <div className="flex items-start gap-4">
                     <CheckCircle2 className="w-8 h-8 text-[#10B981] flex-shrink-0 mt-1 drop-shadow-md" strokeWidth={2.5} />
                     <p className="text-[#02023F] text-xl leading-relaxed">
                       <span className="font-semibold">Documentos, personas, transacciones</span> - Todo interconectado en 360°
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <CheckCircle2 className="w-8 h-8 text-[#10B981] flex-shrink-0 mt-1 drop-shadow-md" strokeWidth={2.5} />
+                    <p className="text-[#02023F] text-xl leading-relaxed">
+                      <span className="font-semibold">Perfil Transaccional y Documental</span>
                     </p>
                   </div>
                 </div>
@@ -142,7 +148,7 @@ export function Slide13ConceptoLegajo() {
         <div className="text-center mt-16 relative z-10">
           <div className="inline-block bg-gradient-to-r from-[#06B6D4] to-[#3B82F6] rounded-2xl px-12 py-6 shadow-2xl">
             <p className="text-white text-3xl">
-              De 30 minutos de búsqueda a <span className="font-bold">acceso instantáneo</span>
+              De minutos de búsqueda a <span className="font-bold">acceso instantáneo</span>
             </p>
           </div>
         </div>

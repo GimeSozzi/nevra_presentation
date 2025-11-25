@@ -55,9 +55,9 @@ export function Slide05Nevra3Pilares() {
       <div className="relative h-full flex flex-col justify-center">
         {/* Header - Logo grande */}
         <div className="text-center mb-8">
-          <img src={logoNevra} alt="Nevra" className="h-24 mx-auto mb-8" />
+          <img src={logoNevra} alt="Nevra" className="h-32 mx-auto mb-8" />
           <h2 className="text-[#02023F] text-5xl leading-tight">
-            La Primera Plataforma AML con<br />
+            La Primera Plataforma Modular AML con<br />
             <span className="text-[#3B82F6]">Inteligencia Artificial Explicable</span> y <span className="text-[#06B6D4]">Blockchain Integrado</span>
           </h2>
         </div>
@@ -117,7 +117,7 @@ export function Slide05Nevra3Pilares() {
         <div className="text-center relative z-10">
           <div className="inline-block bg-gradient-to-r from-[#3B82F6] to-[#06B6D4] rounded-2xl px-12 py-6 shadow-2xl">
             <p className="text-white text-4xl">
-              "De 30 días a 30 minutos"
+              "De días a minutos"
             </p>
           </div>
         </div>

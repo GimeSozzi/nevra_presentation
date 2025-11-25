@@ -1,4 +1,4 @@
-import { Brain, Camera, FileCheck } from 'lucide-react';
+import { Brain, Camera, FileCheck, TrendingUp, Zap } from 'lucide-react';
 import logoBlue from 'figma:asset/2ea72b0dcf0eee577b3030f20b3826bf2c827779.png';
 
 export function Slide08ConceptoOnboarding() {
@@ -6,9 +6,9 @@ export function Slide08ConceptoOnboarding() {
     {
       icon: FileCheck,
       titulo: 'IA Documental',
-      descripcion: 'Extrae, valida y cruza datos de estatutos, poderes, DNI. Sin intervención humana.',
-      stat: '99.4%',
-      statLabel: 'precisión',
+      descripcion: 'Extrae, valida y cruza datos de estatutos, poderes, balances, etc.',
+      stat: <TrendingUp className="w-10 h-10 mx-auto" />,
+      statLabel: 'alta precisión',
       color: '#3B82F6',
       gradient: 'from-blue-500 to-blue-600'
     },
@@ -16,15 +16,15 @@ export function Slide08ConceptoOnboarding() {
       icon: Camera,
       titulo: 'Biometría Facial',
       descripcion: 'Verificación en vivo contra documento. Detección de fraude en tiempo real.',
-      stat: '< 10 seg',
-      statLabel: 'verificación',
+      stat: <Zap className="w-10 h-10 mx-auto" />,
+      statLabel: 'verificación instantánea',
       color: '#06B6D4',
       gradient: 'from-cyan-500 to-cyan-600'
     },
     {
       icon: Brain,
       titulo: 'Agente Autónomo',
-      descripcion: 'Valida, rechaza o solicita aclaraciones. Opera 24/7 sin oficial de compliance.',
+      descripcion: 'Valida, rechaza o solicita aclaraciones. Opera 24/7.',
       stat: '0 días',
       statLabel: 'de espera',
       color: '#A855F7',
@@ -114,7 +114,7 @@ export function Slide08ConceptoOnboarding() {
         <div className="text-center relative z-10">
           <div className="inline-block bg-gradient-to-r from-[#3B82F6] to-[#06B6D4] rounded-2xl px-12 py-6 shadow-2xl">
             <p className="text-white text-3xl">
-              De 15-30 días manuales a <span className="font-bold">8-30 minutos</span> automatizados
+              De <span className="font-bold">días</span> manuales a <span className="font-bold">minutos</span> automatizados
             </p>
           </div>
         </div>

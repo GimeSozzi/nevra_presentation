@@ -35,14 +35,14 @@ export function Slide19DiferenciadoresUnicos() {
     },
     {
       icon: Zap,
-      titulo: 'White Label Total',
-      descripcion: 'Su marca, su identidad. El cliente nunca ve una marca externa. Es 100% su banco.',
+      titulo: 'Onboarding White Label',
+      descripcion: 'Su marca, su identidad. El cliente nunca ve una marca externa. Es 100% su entidad.',
       color: '#F59E0B'
     },
     {
       icon: Link,
-      titulo: 'Sin Vendor Lock-in',
-      descripcion: 'Exporta toda tu data. APIs abiertas. Si algún día decides migrar, tu información es tuya.',
+      titulo: 'Gobernanza de tus datos',
+      descripcion: 'Tus datos e información, tu gobernanza. 100% transparente.',
       color: '#EF4444'
     }
   ];

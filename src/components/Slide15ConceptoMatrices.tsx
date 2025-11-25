@@ -6,7 +6,7 @@ export function Slide15ConceptoMatrices() {
     {
       icon: Brain,
       titulo: 'Cálculo Automático',
-      descripcion: 'IA evalúa 40+ variables: país, actividad, volumen, PEP, listas restrictivas',
+      descripcion: 'IA evalúa de forma dinámica variables heterogéneas tales como: tipo de cliente, actividad, volumen, trazabilidad, jurisdicción, PEP, listas restrictivas, entre otras.',
       color: '#A855F7',
       gradient: 'from-purple-500 to-purple-600'
     },
@@ -90,7 +90,7 @@ export function Slide15ConceptoMatrices() {
         <div className="text-center relative z-10">
           <div className="inline-block bg-gradient-to-r from-[#A855F7] to-[#EC4899] rounded-2xl px-12 py-6 shadow-2xl">
             <p className="text-white text-3xl">
-              De 4-8 horas manuales a <span className="font-bold">12 minutos</span> automáticos
+              De horas manuales a <span className="font-bold">minutos automáticos</span>
             </p>
           </div>
         </div>

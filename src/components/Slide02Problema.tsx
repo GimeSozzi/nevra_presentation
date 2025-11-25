@@ -47,19 +47,19 @@ export function Slide02Problema() {
         <img src={logoWhite} alt="Nevra+" className="h-12" />
       </div>
 
-      {/* Content Grid */}
-      <div className="relative h-full flex items-center">
-        <div className="grid grid-cols-2 gap-16 w-full">
-          {/* Left Column */}
-          <div className="flex items-center">
-            <h2 className="text-white text-6xl leading-tight">
-              Sistemas Tradicionales:<br />
-              <span className="text-[#EF4444]">Lentos, Costosos</span> y llenos de <span className="text-[#F59E0B]">Fricción</span>
-            </h2>
-          </div>
+      {/* Content */}
+      <div className="relative h-full flex flex-col">
+        {/* Título arriba */}
+        <div className="pt-8 pb-12">
+          <h2 className="text-white text-6xl leading-tight text-center">
+            Sistemas Tradicionales:<br />
+            <span className="text-[#EF4444]">Lentos, Costosos</span> y llenos de <span className="text-[#F59E0B]">Fricción</span>
+          </h2>
+        </div>
 
-          {/* Right Column - Cards */}
-          <div className="flex flex-col gap-6">
+        {/* Grid de 4 cards (2x2) */}
+        <div className="flex-1 flex items-center pb-32">
+          <div className="grid grid-cols-4 gap-6 w-full max-w-7xl mx-auto">
             {problemas.map((problema, index) => {
               const Icon = problema.icon;
               return (
@@ -68,22 +68,22 @@ export function Slide02Problema() {
                   className="group relative"
                 >
                   <div 
-                    className="relative bg-white/10 backdrop-blur-sm border-2 rounded-2xl p-8 hover:bg-white/15 hover:scale-[1.02] transition-all duration-300 shadow-2xl overflow-hidden"
+                    className="relative bg-white/10 backdrop-blur-sm border-2 rounded-2xl p-6 hover:bg-white/15 hover:scale-[1.02] transition-all duration-300 shadow-2xl overflow-hidden h-full flex flex-col items-center"
                     style={{ borderColor: problema.color }}
                   >
-                    <div className="flex items-start gap-6">
-                      {/* Icon with gradient background */}
+                    {/* Icon with gradient background */}
+                    <div className="mb-5">
                       <div 
-                        className={`w-16 h-16 rounded-xl flex items-center justify-center bg-gradient-to-br ${problema.gradient} shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 flex-shrink-0`}
+                        className={`w-16 h-16 rounded-xl flex items-center justify-center bg-gradient-to-br ${problema.gradient} shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}
                       >
                         <Icon className="w-8 h-8 text-white" strokeWidth={2} />
                       </div>
+                    </div>
 
-                      {/* Content */}
-                      <div className="flex-1">
-                        <h3 className="text-white text-2xl mb-3">{problema.titulo}</h3>
-                        <p className="text-white/80 text-lg leading-relaxed">{problema.descripcion}</p>
-                      </div>
+                    {/* Content */}
+                    <div className="flex-1 flex flex-col items-center text-center">
+                      <h3 className="text-white text-xl mb-4">{problema.titulo}</h3>
+                      <p className="text-white/80 leading-relaxed">{problema.descripcion}</p>
                     </div>
 
                     {/* Bottom accent */}
@@ -102,10 +102,10 @@ export function Slide02Problema() {
       </div>
 
       {/* Bottom Highlight */}
-      <div className="absolute bottom-20 left-20 right-20 z-10">
-        <div className="bg-white/5 backdrop-blur-sm rounded-2xl px-8 py-5 border border-[#3B82F6]/30">
-          <p className="text-[#3B82F6] text-2xl text-center">
-            El desafío: ser más rápidos que el riesgo, sin perder rigor regulatorio.
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-10 w-auto max-w-4xl">
+        <div className="bg-gradient-to-r from-[#3B82F6]/20 via-[#06B6D4]/20 to-[#3B82F6]/20 backdrop-blur-sm rounded-2xl px-10 py-6 border-2 border-[#3B82F6]/50">
+          <p className="text-white text-2xl text-center">
+            El desafío: ser más rápidos que el riesgo, bajando costos y sin perder rigor regulatorio.
           </p>
         </div>
       </div>
