@@ -3,9 +3,10 @@
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
 
-  export default defineConfig({
-    plugins: [react()],
-    resolve: {
+export default defineConfig({
+  base: '/nevra_presentacion/',
+  plugins: [react()],
+  resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
         'vaul@1.1.2': 'vaul',
@@ -55,10 +56,10 @@
         '@': path.resolve(__dirname, './src'),
       },
     },
-    build: {
-      target: 'esnext',
-      outDir: 'build',
-    },
+  build: {
+    target: 'esnext',
+    outDir: 'dist',
+  },
     server: {
       port: 3000,
       open: true,
