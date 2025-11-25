@@ -1,5 +1,6 @@
 import { Smartphone, CheckCircle2, Zap, Shield, Clock } from 'lucide-react';
 import logoBlue from 'figma:asset/2ea72b0dcf0eee577b3030f20b3826bf2c827779.png';
+import portalClienteScreenshot from 'figma:asset/f92a84e915c8b06f4ff1594aa0d9a6fc6169ec9d.png';
 
 export function Slide09ExperienciaMobile() {
   const features = [
@@ -56,13 +57,12 @@ export function Slide09ExperienciaMobile() {
             
             {/* Phone mockup */}
             <div className="relative w-80 h-[640px] bg-white rounded-[3rem] border-8 border-[#02023F] shadow-2xl overflow-hidden">
-              {/* Screen content placeholder */}
-              <div className="w-full h-full bg-gradient-to-br from-[#3B82F6]/10 to-[#06B6D4]/10 flex items-center justify-center p-8">
-                <div className="text-center">
-                  <Smartphone className="w-24 h-24 text-[#3B82F6] mx-auto mb-4" />
-                  <p className="text-[#374151] text-lg">Portal Cliente<br />Captura de pantalla</p>
-                </div>
-              </div>
+              {/* Screen content - Portal Cliente Screenshot */}
+              <img 
+                src={portalClienteScreenshot} 
+                alt="Portal Cliente Nevra" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
