@@ -1,39 +1,78 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Slide01Portada } from './components/Slide01Portada';
+import { Slide02CrisisSilenciosa } from './components/Slide02CrisisSilenciosa';
 import { Slide02Problema } from './components/Slide02Problema';
-import { Slide03Estadisticas } from './components/Slide03Estadisticas';
-import { Slide04Solucion } from './components/Slide04Solucion';
+import { Slide04PreguntaCritica } from './components/Slide04PreguntaCritica';
+import { Slide05Nevra3Pilares } from './components/Slide05Nevra3Pilares';
 import { Slide05Arquitectura } from './components/Slide05Arquitectura';
-import { Slide06Transicion2 } from './components/Slide06Transicion2';
-import { Slide07Wow1 } from './components/Slide07Wow1';
-import { Slide08Transicion3 } from './components/Slide08Transicion3';
-import { Slide09Wow4 } from './components/Slide09Wow4';
-import { Slide10Matrices } from './components/Slide10Matrices';
-import { Slide11Blockchain } from './components/Slide11Blockchain';
-import { Slide12Monitoreo } from './components/Slide12Monitoreo';
-import { Slide13IA } from './components/Slide13IA';
-import { Slide14Beneficios } from './components/Slide14Beneficios';
-import { Slide15Arquitectura } from './components/Slide15Arquitectura';
+import { Slide07Modules } from './components/Slide07Modules';
+import { Slide06DiferencialNevra } from './components/Slide06DiferencialNevra';
+import { Slide07TransicionCliente } from './components/Slide07TransicionCliente';
+import { Slide08ConceptoOnboarding } from './components/Slide08ConceptoOnboarding';
+import { Slide09ExperienciaMobile } from './components/Slide09ExperienciaMobile';
+import { Slide08VideoOnboarding } from './components/Slide08VideoOnboarding';
+import { Slide10ImpactoMedible } from './components/Slide10ImpactoMedible';
+import { Slide11TransicionInterno } from './components/Slide11TransicionInterno';
+import { Slide13ConceptoLegajo } from './components/Slide13ConceptoLegajo';
+import { Slide12VideoLegajo } from './components/Slide12VideoLegajo';
+import { Slide15ConceptoMatrices } from './components/Slide15ConceptoMatrices';
+import { Slide13VideoMatricesDDC } from './components/Slide13VideoMatricesDDC';
+import { Slide14ImpactoOperativo } from './components/Slide14ImpactoOperativo';
+import { Slide17ConceptoMonitoreo } from './components/Slide17ConceptoMonitoreo';
+import { Slide16VideoIAAnalista } from './components/Slide16VideoIAAnalista';
+import { Slide19ConceptoAgenteIA } from './components/Slide19ConceptoAgenteIA';
+import { Slide20VideoAgenteIA } from './components/Slide20VideoAgenteIA';
+import { Slide19ConceptoBlockchain } from './components/Slide19ConceptoBlockchain';
+import { Slide15VideoBlockchain } from './components/Slide15VideoBlockchain';
+import { Slide18XAICritico } from './components/Slide18XAICritico';
+import { Slide17VideoXAI } from './components/Slide17VideoXAI';
+import { Slide19DiferenciadoresUnicos } from './components/Slide19DiferenciadoresUnicos';
+import { Slide29Preguntas } from './components/Slide29Preguntas';
 import { Slide16CTA } from './components/Slide16CTA';
+import { Slide30MuchasGracias } from './components/Slide30MuchasGracias';
 
 const slides = [
-  Slide01Portada,
-  Slide02Problema,
-  Slide03Estadisticas,
-  Slide04Solucion,
-  Slide05Arquitectura,
-  Slide06Transicion2,
-  Slide07Wow1,
-  Slide08Transicion3,
-  Slide09Wow4,
-  Slide10Matrices,
-  Slide11Blockchain,
-  Slide12Monitoreo,
-  Slide13IA,
-  Slide14Beneficios,
-  Slide15Arquitectura,
-  Slide16CTA,
+  // ACTO 1: EL PROBLEMA (3 slides)
+  Slide01Portada,              // 1. Portada
+  Slide02CrisisSilenciosa,     // 2. Crisis Silenciosa
+  Slide02Problema,             // 3. Problemas Operativos
+  
+  // ACTO 2: LA SOLUCIÓN - NEVRA (5 slides)
+  Slide04PreguntaCritica,      // 4. Pregunta Crítica
+  Slide05Nevra3Pilares,        // 5. Nevra - 3 Pilares
+  Slide05Arquitectura,         // 6. Arquitectura Dual
+  Slide07Modules,              // 7. Módulos de la Plataforma
+  Slide06DiferencialNevra,     // 8. ¿Por qué Nevra es diferente?
+  
+  // ACTO 3: PORTAL CLIENTE - ONBOARDING (5 slides)
+  Slide07TransicionCliente,    // 9. Transición: Portal Cliente
+  Slide08ConceptoOnboarding,   // 10. Concepto: Onboarding Inteligente (IA + Biometría)
+  Slide09ExperienciaMobile,    // 11. Experiencia Multiplataforma
+  Slide08VideoOnboarding,      // 12. VIDEO: Onboarding
+  Slide10ImpactoMedible,       // 13. Impacto Medible (cliente)
+  
+  // ACTO 4: PORTAL INTERNO - EL PODER REAL (10 slides)
+  Slide11TransicionInterno,    // 14. Transición: Portal Interno
+  Slide13ConceptoLegajo,       // 15. Concepto: Legajo Digital 360°
+  Slide12VideoLegajo,          // 16. VIDEO: Legajo 360°
+  Slide15ConceptoMatrices,     // 17. Concepto: Matrices Inteligentes
+  Slide13VideoMatricesDDC,     // 18. VIDEO: Matrices + DDC
+  Slide14ImpactoOperativo,     // 19. Impacto Operativo (respiro)
+  Slide17ConceptoMonitoreo,    // 20. Concepto: Monitoreo Continuo IA
+  Slide16VideoIAAnalista,      // 21. VIDEO: Monitoreo Continuo
+  Slide19ConceptoAgenteIA,     // 22. Concepto: Agente IA
+  Slide20VideoAgenteIA,        // 23. VIDEO: Agente IA
+  Slide19ConceptoBlockchain,   // 24. Concepto: Blockchain Inmutable
+  Slide15VideoBlockchain,      // 25. VIDEO: Blockchain
+  Slide18XAICritico,           // 26. Por Qué XAI es Crítico
+  Slide17VideoXAI,             // 27. VIDEO: XAI Explicable
+  
+  // ACTO 5: CIERRE (5 slides)
+  Slide19DiferenciadoresUnicos,// 28. Lo Único de Nevra
+  Slide29Preguntas,            // 29. Preguntas
+  Slide16CTA,                  // 30. CTA Final
+  Slide30MuchasGracias,        // 31. Muchas Gracias
 ];
 
 // Dimensiones fijas de la slide (16:9)

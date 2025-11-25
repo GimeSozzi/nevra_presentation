@@ -1,28 +1,35 @@
-import { Clock, AlertTriangle, DollarSign } from 'lucide-react';
+import { Clock, AlertTriangle, DollarSign, FolderOpen } from 'lucide-react';
 import logoWhite from 'figma:asset/37d51be629c998410a53f167906d4c237897c17d.png';
 
 export function Slide02Problema() {
   const problemas = [
     {
       icon: Clock,
-      titulo: 'Tiempo',
-      descripcion: 'Semanas para aprobar un cliente corporativo, múltiples idas y vueltas de documentación.',
+      titulo: 'Onboarding Manual Lento',
+      descripcion: '15-30 días para aprobar un cliente corporativo. Múltiples idas y vueltas de documentación.',
       color: '#3B82F6',
       gradient: 'from-blue-500 to-blue-600'
     },
     {
-      icon: AlertTriangle,
-      titulo: 'Falsos positivos',
-      descripcion: 'Más del 80% de las alertas de LA/FT terminan siendo falsos positivos.',
+      icon: FolderOpen,
+      titulo: 'Legajos Fragmentados',
+      descripcion: 'PDFs dispersos, emails, carpetas físicas. Sin visibilidad real del estado del cliente.',
       color: '#06B6D4',
       gradient: 'from-cyan-500 to-cyan-600'
     },
     {
-      icon: DollarSign,
-      titulo: 'Riesgo reputacional',
-      descripcion: 'Multas, inspecciones y desgaste del equipo ante procesos manuales y dispersos.',
+      icon: AlertTriangle,
+      titulo: 'Revisión 100% Humana',
+      descripcion: '8 horas por análisis de DDC. Más del 60% terminan siendo falsos positivos.',
       color: '#A855F7',
       gradient: 'from-purple-500 to-purple-600'
+    },
+    {
+      icon: DollarSign,
+      titulo: 'Análisis Reactivo',
+      descripcion: 'Detectan después que ocurre el problema. Sin trazabilidad auditable inmutable.',
+      color: '#10B981',
+      gradient: 'from-emerald-500 to-emerald-600'
     }
   ];
 
@@ -46,8 +53,8 @@ export function Slide02Problema() {
           {/* Left Column */}
           <div className="flex items-center">
             <h2 className="text-white text-6xl leading-tight">
-              El viaje actual del compliance:<br />
-              <span className="text-[#3B82F6]">lento, costoso</span> y lleno de <span className="text-[#06B6D4]">fricción</span>.
+              Sistemas Tradicionales:<br />
+              <span className="text-[#EF4444]">Lentos, Costosos</span> y llenos de <span className="text-[#F59E0B]">Fricción</span>
             </h2>
           </div>
 

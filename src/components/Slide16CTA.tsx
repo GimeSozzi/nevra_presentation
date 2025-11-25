@@ -3,6 +3,7 @@ import logoWhite from 'figma:asset/37d51be629c998410a53f167906d4c237897c17d.png'
 import logoFidesnet from 'figma:asset/f4df3621a1d1bd007e2c03c245e5548ac614c5da.png';
 import logoPewma from 'figma:asset/e284ca26abcddf88dfebaf24f56f2d7460e1f2de.png';
 import favicon from 'figma:asset/4df7b099b4eff8d432d79ca1226597434891f38e.png';
+import logoNevraPlus from 'figma:asset/40168840387f0e1710eebc7237b80bfc0483a25a.png';
 
 export function Slide16CTA() {
   const nextSteps = [
@@ -71,10 +72,17 @@ export function Slide16CTA() {
         <div className="flex-1 flex flex-col justify-center">
           {/* Title */}
           <div className="text-center mb-12">
-            <h2 className="text-white text-6xl mb-4 leading-tight">
-              ¿Cómo <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3B82F6] to-[#06B6D4]">seguimos</span>?
-            </h2>
-            <p className="text-white/70 text-xl max-w-3xl mx-auto">
+            <div className="flex items-end justify-center gap-6">
+              <h2 className="text-white text-7xl leading-tight">
+                El futuro es
+              </h2>
+              <img src={logoWhite} alt="Nevra+" className="h-28 drop-shadow-2xl mb-4" />
+            </div>
+          </div>
+
+          {/* Next Steps Title */}
+          <div className="text-center mb-10">
+            <p className="text-white/70 text-2xl">
               Tres caminos para comenzar a transformar el cumplimiento normativo en su institución
             </p>
           </div>
