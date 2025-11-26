@@ -1,3 +1,4 @@
+import React from 'react';
 import { Smartphone, CheckCircle2, Zap, Shield, Clock } from 'lucide-react';
 import logoBlue from 'figma:asset/2ea72b0dcf0eee577b3030f20b3826bf2c827779.png';
 import portalClienteScreenshot from 'figma:asset/f92a84e915c8b06f4ff1594aa0d9a6fc6169ec9d.png';
