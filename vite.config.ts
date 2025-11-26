@@ -4,7 +4,7 @@
   import path from 'path';
 
   export default defineConfig({
-    base: '/nevra_presentacion/',
+    base: '/nevra_presentation/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
